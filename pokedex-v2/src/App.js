@@ -1,5 +1,7 @@
+import AppRouter from "./Router/Router";
+
 function App() {
-  return <h1>Hello React 🚀</h1>;
+  return <AppRouter />;
 }
 
 export default App;
