@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "../pages/HomePage";
-import DetailPage from "../pages/DetailPage";
-import PokedexPage from "../pages/PokedexPage";
+import HomePage from "../pages/homePage/HomePage";
+import DetailPage from "../pages/detailPage/DetailPage";
+import PokedexPage from "../pages/pokedexPage/PokedexPage";
 
 const routes = [
   { path: "/", element: <HomePage /> },
