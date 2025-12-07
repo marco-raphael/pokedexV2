@@ -1,5 +1,12 @@
+import GlobalState from "./contexts/GlobalState";
+import AppRouter from "./Router/AppRouter";
+
 function App() {
-  return <h1>Hello React 🚀</h1>;
+  return (
+    <GlobalState>
+      <AppRouter />
+    </GlobalState>
+  );
 }
 
 export default App;
