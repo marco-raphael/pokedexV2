@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "../pages/homePage/HomePage";
-import DetailPage from "../pages/detailPage/DetailPage";
-import PokedexPage from "../pages/pokedexPage/PokedexPage";
+import HomePage from "../Pages/HomePage";
+import PokedexPage from "../Pages/PokedexPage";
+import DetailPage from "../Pages/DetailPage";
 
 const routes = [
   { path: "/", element: <HomePage /> },
-  { path: "/detail/:name", element: <DetailPage /> },
-  { path: "/pokedex", element: <PokedexPage /> },
   { path: "*", element: <HomePage /> },
+  { path: "/pokedex", element: <PokedexPage /> },
+  { path: "/detail/:name", element: <DetailPage /> },
 ];
 
 export default function AppRouter() {

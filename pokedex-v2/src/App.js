@@ -1,7 +1,12 @@
-import AppRouter from "./Router/Router";
+import GlobalState from "./contexts/GlobalState";
+import AppRouter from "./Router/AppRouter";
 
 function App() {
-  return <AppRouter />;
+  return (
+    <GlobalState>
+      <AppRouter />
+    </GlobalState>
+  );
 }
 
 export default App;
